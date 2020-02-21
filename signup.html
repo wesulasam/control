@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+      function validation()
+      {
+      var Id = document.forms["RegForm"]["id"];
+      var firstname = document.forms["RegForm"]["fname"];
+      var lastname= document.forms["RegForm"]["lname"];
+      var emailz = document.forms["RegForm"]["email"];
+      var pass = document.forms["RegForm"]["password"];
+
+      if (Id.value == "")
+          {
+              window.alert("Please enter your name.");
+              name.focus();
+              return false;
+          }
+
+          if (firstname.value == "")
+          {
+              window.alert("Please enter your address.");
+              address.focus();
+              return false;
+          }
+
+          if (lastname.value == "")
+          {
+              window.alert("Please enter a valid e-mail address.");
+              email.focus();
+              return false;
+          }
+
+          if (emailz.value == "")
+          {
+              window.alert("Please enter your telephone number.");
+              phone.focus();
+              return false;
+          }
+
+          if (pass.value == "")
+          {
+              window.alert("Please enter your password");
+              password.focus();
+              return false;
+          }
+
+          return true;
+
+      }
+
+    </script>
+
+    <style>
+input[type=text] {
+  width: 50%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid red;
+  border-radius: 4px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #DC143C;
+  padding: 5px 10px;
+  text-align:left ;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+/*
+body {
+  background-image: url('kpclogo.png');
+}
+*/
+button{
+background-color:#48D1CC;
+width: 10%;
+padding: 9px 5px;
+margin:5px 0;
+cursor:pointer;
+border:none;
+color:#ffffff;
+margin-left: 80px;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+</style>
+
+  </head>
+  <body onload='document.RegForm.password.focus()'>
+    <div class="header">
+      <div class="logo"><a href ="#"><img src = "kpclogo.png"></a></div>
+        <center><h1>SignUp</h1></center>
+      </div><br><br><br><br><br><br>
+
+  <div class="footer">
+  <P>Kenya Pipeline Company</p>
+  </div>
+
+    <center>
+  <form action="connect.php" action="#" method="post" name="RegForm">
+  <input type="text" id="id" placeholder="Employee Id   (Numeric values only) " name="id" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+  <input type="text" id="fname" name="fname"  placeholder="First Name" pattern='[A-Za-z\\s]*'/  title="ALphabets Only" required>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"  pattern='[A-Za-z\\s]*'/  title="ALphabets Only"  required>
+  <input type="text" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  title="Enter valid email address"required>
+  <br>
+  <input type="text" id="pass" name="password" placeholder="Enter Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" title="Password should contain a minimum of 6 chracters,an uppercase letter,a lowercase and a number"required >
+  <br>
+  <br><br>
+
+  <input type="submit" name="submit" value="Signup" onclick="CheckPassword(document.RegForm.password)">
+
+
+</form>
+
+</center>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+
+<script src="script.js"></script>
+<script src="numbers.js"></script>
+
+  </body>
+
+</html>

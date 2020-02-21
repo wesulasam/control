@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+input[type=text] {
+  width: 30%;
+  padding: 8px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid red;
+  border-radius: 4px;
+}
+
+.header {
+overflow: hidden;
+background-color: #DC143C;
+padding: 10px 10px;
+text-align:left ;
+width: 100%;
+top: 0;
+left: 0;
+position: fixed;
+}
+
+.header-right {
+float: right;
+}
+
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: red;
+ color: white;
+ text-align: center;
+}
+
+.logo img {
+position: absolute;
+margin-top: 0px;
+margin-left: 0px;
+height: auto;
+width: auto;
+max-height: 72px;
+max-width: 250px;
+}
+
+</style>
+
+  </head>
+  <body>
+
+  <div class="header">
+    <div class="logo"><a href ="#"><img src = "kpclogo.png"></a>
+    </div>
+
+    <h3>LOGIN</h3>
+    <div class="header-right">
+
+  <a class="active" href="#">About</a>
+  <a href="diesel.php">Diesel</a>
+  <a href="msp.html">MSP</a>
+  <a href="#">IK</a>
+</div>
+</div>
+<div class ="footer">
+<P>Kenya Pipeline Company</p>
+</div>
+<br>
+
+<center><h1>Ground Fuel Recertification</h1></center>
+<center>
+<form action="product.php" action="#" method="post" name="RegForm">
+
+  <p>Select Product<p><selcet name="product" required></p>
+    <select id="product" name="product">
+    <option value="diesel">Diesel</option>
+    <option value="msp">MSP</option>
+    <option value="ik">IK</option>
+  </select><br>
+  <input type="text" id="batchno" name="batchno" placeholder="Batch No."equired>
+  <input type="text" id="pumpstation" name="pumpstation" placeholder="Pump Station" required>
+  <input type="text" id="tankno" name="tankno"  placeholder="Tank No." required>
+  <input type="text" id="labno" name="labno" placeholder="Lab No." required> &nbsp
+  <input type="date" value ="<?php echo date('Y-m-d') ?>" id="date" name="datesampled" placeholder="YYYY-MM-DD"
+  required pattern= "(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" title="Enter a date in this format YYYY/MM/DD"
+ required> &nbsp
+  <input type="text" id="timesampled" name="timesampled" placeholder="Time Sampled" required>
+  <input type="text" id="quanityofbatch" name="quantityofbatch" placeholder="Quantity Of Batch" (Numeric values only) " name="id" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+  <input type="text" id="quantityreceived" name="quantityreceived" placeholder="Quantity Received" (Numeric values only) " name="id" required class="calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57"required>
+  <input type="text" id="certificatenumber" name="certificatenumber"placeholder="Certificate Number" required>
+  <br>
+  <br>
+  <input type="submit" name="save" value="Save" onclick="">
+
+
+
+
+
+  </body>
+</html>

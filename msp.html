@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+
+.column {
+float: left;
+width: 23.33%;
+padding: 5px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+
+}
+
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+}
+}
+
+.header {
+  overflow: hidden;
+  background-color: #DC143C;
+  padding: 10px 10px;
+  text-align:left ;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.header-right {
+  float: right;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+</style>
+
+  <body>
+<div class="header">
+  <div class="logo"><a href ="#"><img src = "kpclogo.png"></a>
+  </div>
+  <h3>LOGIN</h3>
+  <div class="header-right">
+    <a class="active" href="#">About</a>
+    <a href="converter.html">Converter</a>
+    <a href="product.html">Product</a>
+    <a href="report.php">Report</a>
+  </div>
+</div>
+
+<div class ="footer">
+  <P>Kenya Pipeline Company</p>
+  </div>
+
+
+<center><h1> Distillation Table (MSP)</h1></center>
+
+<div  class = "row" align="left">
+  <div class ="column">
+			<h2>% Volume recovered</h2>
+	<form action="" method="post">
+
+    <label for="ten">10%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">20%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">30%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">40%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">50%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">60%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">70%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">80%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">90%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">95%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+   </form>
+ </div>
+
+<div class = "column" align="center">
+			<h2>Observed Temp</h2>
+	<form action="" method="post">
+
+    <label for="ten">10%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">20%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">30%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">40%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">50%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">60%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">70%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">80%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">90%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">95%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+</form>
+</div>
+<div class = "column" align="right">
+			<h2>Corrected Temp</h2>
+	<form action="" method="post">
+
+    <label for="ten">10%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">20%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">30%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">40%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">50%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">60%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">70%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">80%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">90%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+    <label for="ten">95%</label>
+    <input type="text" id="ten" name="ten"><br>
+
+
+
+
+
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
