@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin: 100px;
+text-align: center;
+align: center;
+}
+
+input[type=text],[type=password],[type=number]{
+width: 30%;
+margin: 8px 0;
+padding: 10px 10px;
+display: inline-block;
+border:5px solid #ccc;
+box-sizing: border-box;
+}
+
+button{
+background-color:#48D1CC;
+width: 10%;
+padding: 9px 5px;
+margin:5px 0;
+cursor:pointer;
+border:none;
+color:#ffffff;
+margin-left: 80px;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+#fn,#ln,#un,#pwd,#em,#mn,#fm,#cy{
+font-family:’Lato’, sans-serif;
+color: gray;
+}
+
+#em{
+margin-left:30px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #DC143C;
+  padding: 10px 10px;
+  text-align:left ;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.header-right {
+  float: right;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+</style>
+</head>
+<body>
+
+<div class ="header">
+
+  <div class="logo"><a href ="#"><img src = "kpclogo.png"></a>
+  </div>
+  <h3>LOGIN</h3>
+</div>
+<div class ="footer">
+<P>Kenya Pipeline Company</p>
+</div>
+<br>
+
+<div class = "">
+<h2>Login </h2>
+</div>
+
+<form class="login-form" action="login.php" method="post">
+
+  <div class="wrap">
+
+    <div class="form-group">
+    <input type="text" class="form-input" placeholder="Enter email" name="email" required>
+    </div>
+
+    <div class = "form-group">
+    <input type="password"  class="form-input" placeholder="Enter Password" name="password" required>
+    </div>
+    <br><br>
+    <b><p>Dont have an account?<p><b>&nbsp <a href="signup.html">Signup</a> <br>
+    <div class = "form-group">
+    <button type="submit" class="form-button" name="login" onclick="validate()" >Login</button>
+   </div>
+
+
+</form>
+</div>
+</body>
+</html>
